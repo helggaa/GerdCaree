@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@color/white">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/black"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#E5E7EB"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/user_profile"
+                    android:layout_margin="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="55dp"
+                    android:background="@null"
+                    android:ems="16"
+                    android:inputType="text"
+
+                    android:textColor="#A1A8B0"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birth Date"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/black"
+                android:layout_margin="20sp"
+                android:layout_below="@+id/cardNama"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#E5E7EB"
+                app:cardCornerRadius="30dp">
+                >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/calendar"
+                    android:layout_margin="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextBirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="55dp"
+                    android:background="@null"
+                    android:ems="16"
+
+                    android:inputType="date"
+                    android:text="Enter your birth date"
+                    android:textColor="#A1A8B0"
+                    android:textSize="16sp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardBirth"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/textView4"
+                android:layout_marginStart="20dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_marginEnd="30dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+
+                    android:layout_marginStart="30dp"
+                    />
+
+            </RadioGroup>
+            <LinearLayout
+                android:id="@+id/weightGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gender"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:text="Weight (kg)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gender"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:text="Height (cm)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/plusMinus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/weightGender"
+                >
+
+                <ImageButton
+                    android:id="@+id/buttonWeightIncrement"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/pinkg"
+                    android:src="@drawable/plus" />
+
+                <TextView
+                    android:id="@+id/textViewWeightValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="50"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/buttonWeightDecrement"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:src="@drawable/minus" />
+
+                <ImageButton
+                    android:id="@+id/buttonHeightIncrement"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/pinkg"
+                    android:src="@drawable/plus"
+                    />
+                <TextView
+                    android:id="@+id/textViewHeightValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="170"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/buttonHeightDecrement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FF597B"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/minus"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plusMinus"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="How long have you had GERD? (month)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/plusMinusGerd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/buttonGerdIncrement"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/pinkg"
+                    android:src="@drawable/plus" />
+
+                <TextView
+                    android:id="@+id/textViewGerdValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:text="5 " />
+
+                <ImageButton
+                    android:id="@+id/buttonGerdDecrement"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:src="@drawable/minus" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plusMinusGerd"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+
+                android:text="How often GERD symptoms happen? (week)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/rgGerd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+                <RadioButton
+                    android:id="@+id/rRarely"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/rSeldom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="115dp" />
+                <RadioButton
+                    android:id="@+id/rOften"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="115dp" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:id="@+id/lGerd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rgGerd"
+                android:layout_marginStart="20dp"
+                >
+                <TextView
+                    android:id="@+id/tRarely"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rarely\n&lt; 3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tSeldom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seldom\n3 - 7"
+
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="115dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:id="@+id/tOften"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Often\n &gt; 8"
+
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="120dp"
+                    android:textAlignment="textEnd"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lGerd"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+
+                android:text="Medicine Lists"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cMedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#E5E7EB"
+                app:cardCornerRadius="30dp"
+                >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/pill"
+                    android:layout_margin="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="55dp"
+                    android:background="@null"
+                    android:ems="16"
+
+                    android:inputType="text"
+                    android:textColor="#A1A8B0"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cMedicine"
+                android:layout_margin="20dp"
+                android:backgroundTint="#FF597B"
+                android:text="Submit"
+                android:textStyle="bold"
+
+                android:onClick="onNextButtonClick"
+                />
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/menu_bawah_actdua"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="0dp"/>
+
+</RelativeLayout>

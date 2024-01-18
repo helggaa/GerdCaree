@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "300022362504",
+    "project_id": "gerdcaree",
+    "storage_bucket": "gerdcaree.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300022362504:android:ffc65e2ef43d31992f8a3d",
+        "android_client_info": {
+          "package_name": "com.dicoding.gerdcaree"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFNUqMozn9y6csl9kHQZTe5SK-dwL_WFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addmedicinereminder"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/topMenuMedicine"
+                layout="@layout/menu_atas_medicine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <ImageView
+                android:id="@+id/ivMedicine"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/medicine"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="An image of medicine bottles"
+                android:layout_alignParentTop="true"
+                android:layout_below="@id/topMenuMedicine"
+                android:layout_marginTop="100dp"/>
+
+            <TextView
+                android:id="@+id/tvMedicineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivMedicine"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:text="Medicine Name"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputMedicineName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Enter medicine name"
+                android:layout_below="@+id/tvMedicineName"
+                android:layout_centerHorizontal="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/outlined_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tvMedicineType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputMedicineName"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:text="Medicine Type"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/bMedType1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_below="@+id/tvMedicineType"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/med_type1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"/>
+
+            <ImageButton
+                android:id="@+id/bMedType2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/tvMedicineType"
+                android:layout_toEndOf="@+id/bMedType1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/med_type2"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:elevation="10dp"/>
+
+            <ImageButton
+                android:id="@+id/bMedType3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/tvMedicineType"
+                android:layout_toEndOf="@+id/bMedType2"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/med_type31"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:elevation="10dp"/>
+
+            <ImageButton
+                android:id="@+id/bMedType4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/tvMedicineType"
+                android:layout_toEndOf="@+id/bMedType3"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/med_type4"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:elevation="10dp"/>
+
+            <ImageButton
+                android:id="@+id/bMedType5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/tvMedicineType"
+                android:layout_toEndOf="@+id/bMedType4"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/med_type51"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:elevation="10dp"/>
+
+            <TextView
+                android:id="@+id/tvSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bMedType1"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Time Schedule"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <ImageButton
+                android:id="@+id/bPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/round_add_24"
+                android:backgroundTint="#00000000"
+                android:padding="0dp"
+                android:layout_toRightOf="@+id/tvSchedule"
+                android:layout_below="@+id/bMedType1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="220dp"
+                android:contentDescription="Plus Button" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/tvSchedule"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="30dp"
+                />
+
+            <EditText
+                android:id="@+id/iStartSchedule"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tvDuration"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:hint="Start date"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/baseline_calendar_today_24"
+                android:drawablePadding="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:inputType="date"
+                android:textSize="16sp"
+                android:textColor="#FF597B"/>
+
+            <EditText
+                android:id="@+id/iEndSchedule"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tvDuration"
+                android:layout_toRightOf="@+id/iStartSchedule"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:hint="End date"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/baseline_calendar_today_24"
+                android:drawablePadding="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:inputType="date"
+                android:textSize="16sp"
+                android:textColor="#FF597B"/>
+
+            <TextView
+                android:id="@+id/tvDosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iStartSchedule"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:text="Dosage"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputDosage"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDosage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Enter the dosage of your medicine">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/outlinedDosageInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/bAddReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Reminder"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="#FF597B"
+                android:layout_below="@id/inputDosage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="70dp"/>
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/bottom_navbar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="0dp"/>
+</RelativeLayout>

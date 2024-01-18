@@ -1,0 +1,58 @@
+<!-- res/layout/popup_layout.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="327dp"
+    android:layout_height="434dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rectangle_putih">
+
+    <!-- Popup window content -->
+    <FrameLayout
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:background="@drawable/buletbureng"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logoutpink"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="24dp"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure to log out of your account"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="185dp"
+        android:layout_centerHorizontal="true"/>
+    <FrameLayout
+        android:layout_width="183dp"
+        android:layout_height="56dp"
+        android:background="@drawable/kotakpink"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="65dp"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/cancenlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="#FF597B"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="350dp"/>
+
+</RelativeLayout>

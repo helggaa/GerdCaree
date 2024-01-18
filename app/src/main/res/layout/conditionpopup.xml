@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="430dp"
+    android:background="@drawable/popupbg"
+    android:backgroundTint="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:text="Take a deep breath"
+        android:textSize="24dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your condition is bad, you need to take a deep breath to netralize your feeling before continue your job"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:id="@+id/okeButton"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/submitbtn"
+        android:text="OKE"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+</RelativeLayout>

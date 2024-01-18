@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Page"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#101623"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/bExit"
+        android:layout_width="24dp"
+        android:layout_height="48dp"
+        android:drawableTop="@drawable/logout_svg"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/tvAdmin"
+        android:layout_marginTop="30dp"
+        tools:listitem="@layout/list_user"/>
+</RelativeLayout>

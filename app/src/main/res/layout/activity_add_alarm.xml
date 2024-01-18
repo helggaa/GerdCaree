@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAlarmAct"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/breakfastimg"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/breakfast"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="160dp"
+        android:text="Breakfast"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/rect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="350dp"
+        android:scaleX="1.3"
+        app:srcCompat="@drawable/rect" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="50dp"
+        android:text="Day"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/d1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/circle_button_background">
+
+        <Button
+            android:id="@+id/buttond1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF597B"
+            android:text="S"
+            android:textSize="16dp"
+            android:padding="0dp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/d2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/circle_button_background">
+
+        <Button
+            android:id="@+id/buttond2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF597B"
+            android:text="M"
+            android:textSize="16dp"
+            android:padding="0dp"
+            android:textStyle="bold"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/d3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/circle_button_background">
+
+        <Button
+            android:id="@+id/buttond3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF597B"
+            android:text="T"
+            android:textSize="16dp"
+            android:padding="0dp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/d4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/circle_button_background">
+
+        <Button
+            android:id="@+id/buttond4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF597B"
+            android:text="W"
+            android:textSize="16dp"
+            android:padding="0dp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/d5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/circle_button_background">
+
+        <Button
+            android:id="@+id/buttond5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF597B"
+            android:text="R"
+            android:textSize="16dp"
+            android:padding="0dp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/d6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/circle_button_background">
+
+        <Button
+            android:id="@+id/buttond6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF597B"
+            android:text="F"
+            android:textSize="16dp"
+            android:padding="0dp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/d7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/circle_button_background">
+
+        <Button
+            android:id="@+id/buttond7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF597B"
+            android:text="S"
+            android:textSize="16dp"
+            android:padding="0dp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="500dp"
+        android:layout_marginStart="50dp"
+        android:text="Time"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="530dp"
+        android:text="07.00"
+        android:textColor="#3B4453"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="510dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/edit"
+        android:onClick="fSetWaktu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="570dp"
+        android:layout_marginStart="50dp"
+        android:text="Song"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="50dp"
+        android:text="skz - domino"
+        android:textColor="#3B4453"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/editsong"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="580dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/edit"
+        android:onClick="onEditSongButtonClick"/>
+
+</RelativeLayout>

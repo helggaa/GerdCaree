@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="#F9B5D0">
+
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GerdCare"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"/>
+
+    <RelativeLayout
+        android:layout_below="@id/tvLogo"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:background="@drawable/rounded_card"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:textColor="#101623"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#101623"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvLogin"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_input"
+            android:hint="Input username"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:paddingStart="15dp"
+            android:layout_below="@id/tvUsername"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/baseline_person_2_24"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#101623"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@id/etUsername"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_input"
+            android:hint="Input password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:paddingStart="15dp"
+            android:layout_below="@id/tvPassword"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/round_lock_24"
+            android:drawablePadding="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bLogin"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#FF597B"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etPassword"
+            android:layout_marginTop="70dp"/>
+
+        <TextView
+            android:id="@+id/tvNotRegisterYet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not registered yet?"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#A1A8B0"
+            android:layout_below="@id/bLogin"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="80dp"/>
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Here"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FF597B"
+            android:layout_below="@id/bLogin"
+            android:layout_toRightOf="@+id/tvNotRegisterYet"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

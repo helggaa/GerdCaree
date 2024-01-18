@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AmbulanceActivity">
+        <include
+            android:id="@+id/menuAtas"
+            layout="@layout/menu_atas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="300dp"
+            android:layout_marginTop="125dp"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menuAtas"
+            app:srcCompat="@drawable/awal" />
+
+        <TextView
+            android:id="@+id/textBiasa"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="440dp"
+            android:text="Nearest Hospital List"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <FrameLayout
+            android:id="@+id/rm_satu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="475dp"
+            android:background="@drawable/pink_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageButton
+                android:layout_width="143dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="7dp"
+                app:srcCompat="@drawable/hospital" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4,5"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginStart="110dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_star_24"
+                android:layout_marginTop="85dp"
+                android:layout_marginStart="85dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_location_on_24"
+                android:layout_marginTop="110dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Holy Family Hospital  "
+                android:layout_marginTop="110dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="23dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_local_phone_24"
+                android:layout_marginTop="155dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 688 789 79"
+                android:textColor="@color/black"
+                android:layout_marginTop="155dp"
+                android:layout_marginStart="25dp"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/rm_dua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="213dp"
+            android:layout_marginTop="475dp"
+            android:background="@drawable/pink_border">
+
+            <ImageButton
+                android:layout_width="143dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                app:srcCompat="@drawable/hospitaliti" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="85dp"
+                android:layout_marginStart="115dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_star_24"
+                android:layout_marginTop="85dp"
+                android:layout_marginStart="90dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_location_on_24"
+                android:layout_marginTop="110dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Al - Shifa"
+                android:textColor="@color/black"
+                android:layout_marginTop="110dp"
+                android:layout_marginStart="23dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_local_phone_24"
+                android:layout_marginTop="155dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 688 789 79"
+                android:layout_marginTop="155dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="23dp"/>
+        </FrameLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/menu_bawah"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            app:tabMode="fixed"
+            app:tabIndicatorHeight="0dp"/>
+
+
+
+    </RelativeLayout>
+</layout>
+

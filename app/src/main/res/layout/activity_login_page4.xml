@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage4"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/ivMedReminder"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/conditionrecord"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvMedicineReminderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivMedReminder"
+        android:text="Know your condition better and receive advice to make it better!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/bLoginPage2"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:backgroundTint="#F9B5D0"
+        android:layout_below="@+id/tvMedicineReminderText"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/bLoginPage3"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:backgroundTint="#F9B5D0"
+        android:layout_below="@+id/tvMedicineReminderText"
+        android:layout_toRightOf="@+id/bLoginPage2"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/bLoginPage4"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:backgroundTint="#FF597B"
+        android:layout_below="@+id/tvMedicineReminderText"
+        android:layout_toRightOf="@+id/bLoginPage3"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/bLoginPage5"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:backgroundTint="#F9B5D0"
+        android:layout_below="@+id/tvMedicineReminderText"
+        android:layout_toRightOf="@+id/bLoginPage4"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageButton
+        android:id="@+id/bNext"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#FF597B"
+        android:src="@drawable/round_navigate_next_24"
+        android:padding="0dp"
+        android:layout_below="@+id/tvMedicineReminderText"
+        android:layout_toRightOf="@+id/bLoginPage4"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="190dp" />
+
+</RelativeLayout>

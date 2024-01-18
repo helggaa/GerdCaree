@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pink background for the entire layout -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pink" /><!-- Set the color to pink (#FFC0CB) or any other desired color -->
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <!-- White content area (to overlay the pink background) -->
+    <item android:left="3dp" android:right="3dp" android:top="3dp" android:bottom="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp"/>
+            <solid android:color="#FFFFFF" /> <!-- Set the color to white or any other desired color -->
+        </shape>
+    </item>
+
+</layer-list>
