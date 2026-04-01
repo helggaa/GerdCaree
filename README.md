@@ -22,36 +22,7 @@ All data in Registration is now stored in the result form(ReadRegistration)
 Contributing
 
 1. Rahmat Nugrohoning Gesang
-
-● Code the UI for Home Page and Registration Page
-
-● Create the Logo
-
 2. Helga Parama Zhafran
-
-● Code UI for Ambulance
-
-● Combine the FrontEnd code (connect each activities)
-
-● Connect BackEnd and FrontEnd
-
 4. Diva Ivani Arista Pangastuti 
-
-● Create UI design for My Condition
-
 5. Nadia Reva Salsabila Ramadhani
-
-● Create UI Design for Medicine Reminder
-
-● Code the UI for Login Page and Medicine Reminder Feature
-
-● Code the BackEnd
-
-● Code the Registration create, read, and update
-
 6. Saarah Muthiah Yasmin
-
-● Create UI Design for Meal Reminder
-
-● Code the UI for Meal Reminder, Registration Read and Registration Notification
-● Code the BackEnd
